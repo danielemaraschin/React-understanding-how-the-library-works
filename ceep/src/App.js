@@ -1,5 +1,5 @@
 import React from 'react'
-import ListadeNotas from './components/listaDeNotas'
+import ListadeNotas from './components/ListaDeNotas'
 import { FormularioCadastro} from './components/FormularioCadastro'
 
 function App() {
@@ -7,8 +7,7 @@ function App() {
     <section>
      <FormularioCadastro/>
     <ListadeNotas/>
-    </section> 
-    
+    </section>    
   );
 }
 
