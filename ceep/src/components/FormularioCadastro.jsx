@@ -13,4 +13,4 @@ class FormularioCadastro extends Component {
     }
 }
 
-export default FormularioCadastro
+export default FormularioCadastro;
