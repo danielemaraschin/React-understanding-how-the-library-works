@@ -5,13 +5,16 @@ class ListaDeNotas extends Component {
     render() {
         return (
             <ul>
-                <li>           
+                <li>  
+                    <div> Trabalho</div>         
                     <CardNota/>
                 </li>
                 <li>
+                <div> Trabalho</div>
                     <CardNota/>
                 </li>
                 <li>
+                <div> Estudos</div>
                     <CardNota/>
                 </li>
             </ul>
