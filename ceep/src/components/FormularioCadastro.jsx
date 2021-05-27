@@ -1,5 +1,5 @@
-import React, { Component }  from "react";
-import { render } from "react-dom"
+import React, { Component } from "react";
+
 
 export class FormularioCadastro extends Component {
     render(){
@@ -9,6 +9,6 @@ export class FormularioCadastro extends Component {
                 <textarea placeholder="Escreva sua nota..." />
                 <button>Criar Nota</button>
             </form>
-        )
+        );
     }
 }
