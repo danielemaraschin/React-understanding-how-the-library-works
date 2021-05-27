@@ -1,7 +1,7 @@
-import React from "react"
+import React, { Component }  from "react";
 import { render } from "react-dom"
 
-export class FormularioCadastro extends Component{
+export class FormularioCadastro extends Component {
     render(){
         return (
             <form>
