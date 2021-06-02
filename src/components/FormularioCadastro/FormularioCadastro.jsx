@@ -3,7 +3,7 @@ import "./estilo.css";
 class FormularioCadastro extends Component {
 
   handleMudacaTitulo(evento){
-
+    console.log(evento.target.value)
   }
   render() {
     return (
