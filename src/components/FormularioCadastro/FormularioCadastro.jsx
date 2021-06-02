@@ -3,6 +3,7 @@ import "./estilo.css";
 class FormularioCadastro extends Component {
 
   constructor(){
+    super(); // child element from Component
     this.titulo = "";
 
   }
