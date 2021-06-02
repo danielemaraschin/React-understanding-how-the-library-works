@@ -1,7 +1,6 @@
-import React, { Component } from "react"; //imrc+TAB
+import React, { Component } from "react";
 import "./estilo.css";
-
-class CardNota extends Component { //CC+TAB
+class CardNota extends Component {
   render() {
     return (
       <section className="card-nota">
