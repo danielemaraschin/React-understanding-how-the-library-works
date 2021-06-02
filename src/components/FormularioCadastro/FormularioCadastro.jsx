@@ -2,12 +2,18 @@ import React, { Component } from "react"; //imrc+TAB
 import "./estilo.css";
 class FormularioCadastro extends Component {
 
+  constructor(){
+    this.titulo = "";
+
+  }
+
   handleMudacaTitulo(evento){
-    console.log(evento.target.value)
+   this.titulo = evento.target.value
   }
   render() {
     return (
-      <form className="form-cadastro ">
+      <form className="form-cadastro "
+      >
         <input
           type="text"
           placeholder="Título"
