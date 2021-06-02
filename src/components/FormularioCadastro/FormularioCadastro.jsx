@@ -1,6 +1,10 @@
-import React, { Component } from "react";
+import React, { Component } from "react"; //imrc+TAB
 import "./estilo.css";
 class FormularioCadastro extends Component {
+
+  handleMudacaTitulo(evento){
+
+  }
   render() {
     return (
       <form className="form-cadastro ">
@@ -8,6 +12,7 @@ class FormularioCadastro extends Component {
           type="text"
           placeholder="Título"
           className="form-cadastro_input"
+          onChange={this.handleMudacaTitulo}
         />
         <textarea
           rows={15}
