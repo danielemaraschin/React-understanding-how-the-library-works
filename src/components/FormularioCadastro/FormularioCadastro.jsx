@@ -2,8 +2,8 @@ import React, { Component } from "react"; //imrc+TAB
 import "./estilo.css";
 class FormularioCadastro extends Component {
 
-  constructor(){
-    super(); // child element from Component
+  constructor(props){
+    super(props); // child element from Component
     this.titulo = " ";
     this.texto =" ";
   }
@@ -21,7 +21,8 @@ class FormularioCadastro extends Component {
   _criarNota(evento){
     evento.preventDefault();
     evento.stopPropagation();
-    console.log(`Nova nota criada: ` + " " + this.titulo + " "+ this.texto)
+    this.props.criarNota() //aqui sem _ no criar nota pq é uma propriedade no react, não js
+
   }
 
 
