@@ -21,7 +21,7 @@ class FormularioCadastro extends Component {
   _criarNota(evento){
     evento.preventDefault();
     evento.stopPropagation();
-    this.props.criarNota() //aqui sem _ no criar nota pq é uma propriedade no react, não js
+    this.props.criarNota(this.titulo, this.texto) //aqui sem _ no criar nota pq é uma propriedade no react, não js
 
   }
 
