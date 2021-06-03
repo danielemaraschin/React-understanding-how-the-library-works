@@ -5,13 +5,18 @@ class FormularioCadastro extends Component {
   constructor(){
     super(); // child element from Component
     this.titulo = "";
-
+    this.texto ="";
   }
 
-  handleMudacaTitulo(evento){
+  _handleMudacaTitulo(evento){
    this.titulo = evento.target.value;
-   console.log(this.titulo)
   }
+
+  _handleMudacaTexto(evento){
+    this.texto = evento.target.value;
+   }
+
+
   render() {
     return (
       <form className="form-cadastro "
