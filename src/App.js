@@ -5,6 +5,10 @@ import "./assets/App.css";
 import './assets/index.css';
 class App extends Component {
 
+  constructor(){
+    this.notas = []
+  }
+
   criarNota(titulo, texto){
     console.log(`Nova nota criada `+ titulo+ " " + texto)
 
