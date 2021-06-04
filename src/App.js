@@ -13,7 +13,7 @@ class App extends Component {
     return (
       <section className="conteudo">
         <FormularioCadastro criarNota={this.criarNota}/>
-        <ListaDeNotas />   props
+        <ListaDeNotas notas={this.notas}/> 
       </section>
     );
   }
