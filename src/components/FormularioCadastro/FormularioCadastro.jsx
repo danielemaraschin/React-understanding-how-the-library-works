@@ -21,17 +21,16 @@ class FormularioCadastro extends Component {
   _criarNota(evento){
     evento.preventDefault();
     evento.stopPropagation();
-    this.props.criarNota(this.titulo, this.texto) //aqui sem _ no criar nota pq é uma propriedade no react, não js
-
+    this.props.criarNota(this.titulo, this.texto)
+  //props is without _
   }
-
 
   render() {
     return (
       <form className="form-cadastro"
         onSubmit={this._criarNota.bind(this)}
       >
-        <input
+        <input //sao atributos
           type="text"
           placeholder="Título"
           className="form-cadastro_input"
