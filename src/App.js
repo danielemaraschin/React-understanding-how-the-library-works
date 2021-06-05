@@ -6,6 +6,7 @@ import './assets/index.css';
 class App extends Component {
 
   constructor(){
+    super();
     this.notas = []
   }
 
