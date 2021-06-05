@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import CardNota from "../CardNota";
 import "./estilo.css";
 class ListaDeNotas extends Component {
+  
 
   render() {
     return (
