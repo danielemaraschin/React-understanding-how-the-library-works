@@ -7,18 +7,19 @@ class App extends Component {
 
   constructor(){
     super();
-    this.notas = [1,1,1,1,1,1]
+    this.notas = []
   }
 
   criarNota(titulo, texto){
-    const novaNota = {titulo, texto };
+    const novaNota = {titulo, texto};
     this.notas.push(novaNota);
+    console.log(this.notas.length)
 
   }
   render() {
     return (
       <section className="conteudo">
-        <FormularioCadastro criarNota={this.criarNota}/>
+        <FormularioCadastro criarNota={this.criarNota.bind(this)}/>
         <ListaDeNotas notas={this.notas}/> 
       </section>
     );
