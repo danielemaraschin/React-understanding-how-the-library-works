@@ -3,9 +3,6 @@ import CardNota from "../CardNota";
 import "./estilo.css";
 class ListaDeNotas extends Component {
 
-  constructor(props){
-    super(props)
-  }
   render() {
     return (
       <ul className="lista-notas">
