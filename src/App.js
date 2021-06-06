@@ -14,9 +14,11 @@ class App extends Component {
     const novaNota = {titulo, texto};
     this.notas.push(novaNota);
     console.log(this.notas.length)
+    this.render();
 
   }
   render() {
+    console.log("render")
     return (
       <section className="conteudo">
         <FormularioCadastro criarNota={this.criarNota.bind(this)}/>
