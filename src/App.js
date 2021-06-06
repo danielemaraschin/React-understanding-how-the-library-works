@@ -8,14 +8,12 @@ class App extends Component {
   constructor(){
     super();
     this.notas = []
+    this.state
   }
 
   criarNota(titulo, texto){
     const novaNota = {titulo, texto};
     this.notas.push(novaNota);
-    console.log(this.notas.length)
-    this.render();
-
   }
   render() {
     console.log("render")
