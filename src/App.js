@@ -8,7 +8,9 @@ class App extends Component {
   constructor(){
     super();
     this.notas = []
-    this.state = {}
+    this.state = {
+      notas: []
+    }
   }
 
   criarNota(titulo, texto){
