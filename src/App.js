@@ -7,7 +7,7 @@ class App extends Component {
 
   constructor(){
     super();
-    this.state = {
+    this.state = { //PROPRIEDADE ESPECIAL
       notas: [] //ao inves do this.notas = [] solto no constructor
     }
   }
