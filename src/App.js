@@ -19,17 +19,14 @@ class App extends Component {
     const novoEstado ={
       notas: novoArrayNotas
     }
-    this.notas.push(novaNota);
-    this.setState({
-      notas:this.notas
-    })
+    this.setState(novoEstado)
   }
   render() {
     console.log("render")
     return (
       <section className="conteudo">
         <FormularioCadastro criarNota={this.criarNota.bind(this)}/>
-        <ListaDeNotas notas={this.notas}/> 
+        <ListaDeNotas notas={this.state.notas}/> 
       </section>
     );
   }
