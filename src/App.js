@@ -14,7 +14,9 @@ class App extends Component {
   criarNota(titulo, texto){
     const novaNota = {titulo, texto};
     this.notas.push(novaNota);
-    this.setState({})
+    this.setState({
+      notas:this.notas
+    })
   }
   render() {
     console.log("render")
