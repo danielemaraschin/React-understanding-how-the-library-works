@@ -7,10 +7,10 @@ class ListaDeNotas extends Component {
   render() {
     return (
       <ul className="lista-notas">
-        {this.props.notas.map((notas, index) => {
+        {this.props.notas.map((nota, index) => { //recebe nas props os array de notas que é o estado do app
           return (
             <li className="lista-notas_item" key={index}>
-              <CardNota />
+              <CardNota titulo={nota.titulo} texto={nota.texto}/>
             </li>
           );
         })}
